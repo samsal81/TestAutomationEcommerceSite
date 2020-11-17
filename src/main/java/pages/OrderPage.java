@@ -21,7 +21,8 @@ public class OrderPage {
 	@FindBy(how = How.XPATH, using = "//a[@class='bankwire']")WebElement PayByBankWire_Payment_Page;
 	@FindBy(how = How.XPATH, using = "//span[contains(text(),'I confirm my order')]")WebElement IConfirmMyOrder_Payment_Page;
 	@FindBy(how = How.XPATH, using = "//*[@id='header']/div[2]/div/div/nav/div[1]/a")WebElement MyAccount_Button;
-	@FindBy(how = How.XPATH, using = "//*[@id='center_column']/div/[6]")WebElement OrderReference_Text;
+	@FindBy(how = How.XPATH, using = "//p[@class='cheque-indent']/strong[@class='dark']")WebElement Order_Confirmation;
+	//@FindBy(how = How.XPATH, using = "//div[@class='box']/[6]")WebElement OrderReference_Text;
 	
 	//InteractiveMethods
 	public void Click_ProceedToCheckout() {
@@ -52,11 +53,21 @@ public class OrderPage {
 		MyAccount_Button.click();
 	}
 	
-	public String Get_OrderReference_Text() {
-		String Sub_Str = OrderReference_Text.getText();
-		String Order_Ref_num = Sub_Str.substring(45, 53);
-		return Order_Ref_num;
+	public void Assert_Order_Confirmation() {
+		
+		if(Order_Confirmation.getText().contains("complete")) {
+			System.out.println("Order Verified");
+		}else {
+			System.out.println("Order not completed");
+		}
+		
 	}
+	
+	/*
+	 * public String Get_OrderReference_Text() { String Sub_Str =
+	 * OrderReference_Text.getText(); String Order_Ref_num = Sub_Str.substring(45,
+	 * 53); return Order_Ref_num; }
+	 */
 	
 
 }

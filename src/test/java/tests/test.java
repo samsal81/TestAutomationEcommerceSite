@@ -58,10 +58,8 @@ public class test {
 		OrderP.Click_ProceedToCheckout_Shipping_Page();
 		OrderP.Click_PayByBankWire_Payment_Page();
 		OrderP.Click_IConfirmMyOrder_Page();
-		System.out.println(OrderP.Get_OrderReference_Text());
-		OrderP.Click_MyAccount_Button();
+		OrderP.Assert_Order_Confirmation();
 		
-		MyAcc.Click_OrderHistoryAndDetails_Button();
 		
 		Thread.sleep(4000);
 		
