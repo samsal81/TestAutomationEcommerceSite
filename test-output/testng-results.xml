@@ -2,24 +2,24 @@
 <testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="16137" started-at="2020-11-17T17:10:42 EST" finished-at="2020-11-17T17:10:58 EST">
+  <suite name="Default suite" duration-ms="29352" started-at="2020-11-17T18:32:15 EST" finished-at="2020-11-17T18:32:45 EST">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="16137" started-at="2020-11-17T17:10:42 EST" finished-at="2020-11-17T17:10:58 EST">
-      <class name="tests.WishListWorksAfterLohin">
-        <test-method status="PASS" signature="StartBrowser()[pri:0, instance:tests.WishListWorksAfterLohin@63e2203c]" name="StartBrowser" is-config="true" duration-ms="9110" started-at="2020-11-17T17:10:42 EST" finished-at="2020-11-17T17:10:51 EST">
+    <test name="Default test" duration-ms="29352" started-at="2020-11-17T18:32:15 EST" finished-at="2020-11-17T18:32:45 EST">
+      <class name="tests.BuyOrderFunctionality">
+        <test-method status="PASS" signature="StartBrowser()[pri:0, instance:tests.BuyOrderFunctionality@45752059]" name="StartBrowser" is-config="true" duration-ms="9407" started-at="2020-11-17T18:32:15 EST" finished-at="2020-11-17T18:32:25 EST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- StartBrowser -->
-        <test-method status="PASS" signature="TestWishListWorksAfterLohin()[pri:0, instance:tests.WishListWorksAfterLohin@63e2203c]" name="TestWishListWorksAfterLohin" duration-ms="4893" started-at="2020-11-17T17:10:51 EST" finished-at="2020-11-17T17:10:56 EST">
+        <test-method status="PASS" signature="TestBuyOrderFunctionality()[pri:0, instance:tests.BuyOrderFunctionality@45752059]" name="TestBuyOrderFunctionality" duration-ms="19030" started-at="2020-11-17T18:32:25 EST" finished-at="2020-11-17T18:32:44 EST">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- TestWishListWorksAfterLohin -->
-        <test-method status="PASS" signature="CloseBrowser()[pri:0, instance:tests.WishListWorksAfterLohin@63e2203c]" name="CloseBrowser" is-config="true" duration-ms="2081" started-at="2020-11-17T17:10:56 EST" finished-at="2020-11-17T17:10:58 EST">
+        </test-method> <!-- TestBuyOrderFunctionality -->
+        <test-method status="PASS" signature="CloseBrowser()[pri:0, instance:tests.BuyOrderFunctionality@45752059]" name="CloseBrowser" is-config="true" duration-ms="831" started-at="2020-11-17T18:32:44 EST" finished-at="2020-11-17T18:32:45 EST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- CloseBrowser -->
-      </class> <!-- tests.WishListWorksAfterLohin -->
+      </class> <!-- tests.BuyOrderFunctionality -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

@@ -9,14 +9,12 @@ import org.testng.annotations.Test;
 import pages.LoginPage;
 import pages.MainPage;
 import pages.MyAccountPage;
-import pages.OrderPage;
 import pages.ProductPage;
 import pages.TshirtsPage;
 import util.BrowserFactory;
 import util.ExcelReader;
 
-/*Test Case 1 - Automate End to End Buy Order functionality.
-
+/*Test Case 3 - Verify that Total Price is reflecting correctly if user changes quantity on 'Shopping Cart Summary' Page.
 Steps to Automate:
 1. Open link http://automationpractice.com/index.php
 2. Login to the website.
@@ -24,16 +22,15 @@ Steps to Automate:
 4. Click on sub menu 'T-shirts'.
 5. Mouse hover on the second product displayed.
 6. 'More' button will be displayed, click on 'More' button.
-7. Increase quantity to 2.
-8. Select size 'L'
-9. Select color.
+7. Make sure quantity is set to 1.
+8. Select size 'M'
+9. Select color of your choice.
 10. Click 'Add to Cart' button.
 11. Click 'Proceed to checkout' button.
-12. Complete the buy order process till payment.
-13. Make sure that Product is ordered.*/
+12. Change the quantity to 2.
+13. Verify that Total price is changing and reflecting correct price.*/
 
-public class BuyOrderFunctionality {
-
+public class CorrectTotalPrice {
 	WebDriver driver;
 
 	// Starting browser and navigating to website
@@ -43,14 +40,13 @@ public class BuyOrderFunctionality {
 		driver = BrowserFactory.LaunchBrowser();
 	}
 
-	// The actual Test
 	@Test
-	public void TestBuyOrderFunctionality() throws InterruptedException {
+	public void TestCorrectTotalPrice() throws InterruptedException {
 		
 		ExcelReader reader = new ExcelReader("./data/testdata.xlsx");
 		String username = reader.getCellData("Sheet1", "username", 2);
 		String password = reader.getCellData("Sheet1", "password", 2);
-
+		
 		MainPage MainP = PageFactory.initElements(driver, MainPage.class);
 		MainP.ClickOnSignInButton();
 
@@ -83,26 +79,13 @@ public class BuyOrderFunctionality {
 		ProdP.Click_AddToCart_Button();
 		// 11. Click 'Proceed to checkout' button.
 		ProdP.Click_ProceedToCheckout_Button();
-
-		// 12. Complete the buy order process till payment.
-		OrderPage OrderP = PageFactory.initElements(driver, OrderPage.class);
-		OrderP.Click_ProceedToCheckout();
-		OrderP.Click_ProceedToCheckout_Address_Page();
-		OrderP.Click_CheckBox_AgreeToTerms_Shipping_Page();
-		OrderP.Click_ProceedToCheckout_Shipping_Page();
-		OrderP.Click_PayByBankWire_Payment_Page();
-		OrderP.Click_IConfirmMyOrder_Page();
-		// 13. Make sure that Product is ordered.
-		OrderP.Assert_Order_Confirmation();
-
-		Thread.sleep(4000);
-
+		
+		Thread.sleep(5000);
 	}
-
+	
 	// Closing browser
 	@AfterMethod
 	public void CloseBrowser() {
 		BrowserFactory.CloseBrowser();
 	}
-
 }

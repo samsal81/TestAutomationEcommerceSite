@@ -42,6 +42,8 @@ public class WishListWorksAfterLohin {
 		ts.Hover_Over_Product();
 		// 5. 'Add to Wishlist' will appear on the bottom of that product, click on it.
 		ts.Click_wishlistProduct();
+		//6. Verify that error message is displayed
+		ts.Verify_wishlist_ErrorBox();
 
 		Thread.sleep(3000);
 	}
