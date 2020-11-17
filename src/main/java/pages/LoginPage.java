@@ -13,10 +13,12 @@ public class LoginPage {
 		this.driver = driver;
 	}
 	
+	//Element Library
 	@FindBy(how = How.XPATH, using = "//input[@id='email']") WebElement Email_Address_Field;
 	@FindBy(how = How.XPATH, using = "//input[@id='passwd']") WebElement Password_Field;
 	@FindBy(how = How.XPATH, using = "//button[@id='SubmitLogin']") WebElement SignIn_Button;
 	
+	//InteractiveMethods
 	public void Enter_EMail_Address(String Email) {
 		Email_Address_Field.sendKeys(Email);
 	}

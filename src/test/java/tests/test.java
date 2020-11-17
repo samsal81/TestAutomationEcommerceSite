@@ -18,11 +18,13 @@ public class test {
 	
 	WebDriver driver;
 	
+	//Starting browser and navigating to website
 	@BeforeMethod
 	public void StartBrowser() {
 		driver = BrowserFactory.LaunchBrowser();
 	}
 		
+	//The actual Test
 	@Test
 	public void testclick() throws InterruptedException {
 		
@@ -65,7 +67,7 @@ public class test {
 		
 	}
 	
-	
+	//Closing browser
 	  @AfterMethod public void CloseBrowser() { 
 		  BrowserFactory.CloseBrowser(); 
 		  }

@@ -14,8 +14,10 @@ public class MainPage {
 		this.driver = driver;
 	}
 	
+	//Element Library
 	@FindBy(how = How.XPATH, using = "//a[contains(text(), 'Sign in')]")WebElement Sign_in_Button;
 	
+	//InteractiveMethods
 	public void ClickOnSignInButton() {
 		Sign_in_Button.click();
 	}

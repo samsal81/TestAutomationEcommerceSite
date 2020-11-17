@@ -14,12 +14,14 @@ public class ProductPage {
 		this.driver = driver;
 	}
 	
+	//Element Library
 	@FindBy(how = How.XPATH, using = "//input[@id='quantity_wanted']")WebElement Quantity_Wanted;
 	@FindBy(how = How.XPATH, using = "//select[@id='group_1']")WebElement Size_Selection;
 	@FindBy(how = How.XPATH, using = "//a[@id='color_14']")WebElement Select_Color;
 	@FindBy(how = How.XPATH, using = "//p[@id='add_to_cart']/button")WebElement AddToCart_Button;
 	@FindBy(how = How.XPATH, using = "//*[@id='layer_cart']/div[1]/div[2]/div[4]/a")WebElement ProceedToCheckout_Button;
 	
+	//InteractiveMethods
 	public void Enter_Quantity(String quantity) {
 		Quantity_Wanted.clear();
 		Quantity_Wanted.sendKeys(quantity);

@@ -14,6 +14,7 @@ public class MyAccountPage {
 		this.driver = driver;
 	}
 
+	//Element Library
 	@FindBy(how = How.XPATH, using = "//a[@title='Women']")
 	WebElement Women_Button;
 	@FindBy(how = How.XPATH, using = "//*[@id=\"block_top_menu\"]/ul/li[1]/ul/li[1]/ul/li[1]/a")
@@ -21,6 +22,7 @@ public class MyAccountPage {
 	@FindBy(how = How.XPATH, using = "//*[@id=\"center_column\"]/div/div[1]/ul/li[1]/a")
 	WebElement OrderHistoryAndDetails_Button;
 
+	//InteractiveMethods
 	public void Hover_Over_Women_Button() {
 		Actions actions = new Actions(driver);
 		actions.moveToElement(Women_Button).perform();

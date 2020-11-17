@@ -9,6 +9,7 @@ public class BrowserFactory {
 	
 	static WebDriver driver;
 	
+	//Open Browser
 	public static WebDriver LaunchBrowser() {
 		System.setProperty("webdriver.chrome.driver", "./Drivers/chromedriver.exe");
 		driver = new ChromeDriver();
@@ -20,6 +21,7 @@ public class BrowserFactory {
 		
 	}
 	
+	//Close Browser
 	public static void CloseBrowser() {
 		
 		driver.close();
