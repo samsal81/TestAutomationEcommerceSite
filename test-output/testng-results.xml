@@ -2,24 +2,24 @@
 <testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="28865" started-at="2020-11-17T15:33:51 EST" finished-at="2020-11-17T15:34:20 EST">
+  <suite name="Default suite" duration-ms="27510" started-at="2020-11-17T15:41:14 EST" finished-at="2020-11-17T15:41:42 EST">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="28865" started-at="2020-11-17T15:33:51 EST" finished-at="2020-11-17T15:34:20 EST">
-      <class name="tests.test">
-        <test-method status="PASS" signature="StartBrowser()[pri:0, instance:tests.test@3b084709]" name="StartBrowser" is-config="true" duration-ms="9157" started-at="2020-11-17T15:33:52 EST" finished-at="2020-11-17T15:34:01 EST">
+    <test name="Default test" duration-ms="27510" started-at="2020-11-17T15:41:14 EST" finished-at="2020-11-17T15:41:42 EST">
+      <class name="tests.BuyOrderFunctionality">
+        <test-method status="PASS" signature="StartBrowser()[pri:0, instance:tests.BuyOrderFunctionality@3b084709]" name="StartBrowser" is-config="true" duration-ms="9276" started-at="2020-11-17T15:41:14 EST" finished-at="2020-11-17T15:41:24 EST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- StartBrowser -->
-        <test-method status="PASS" signature="testclick()[pri:0, instance:tests.test@3b084709]" name="testclick" duration-ms="18833" started-at="2020-11-17T15:34:01 EST" finished-at="2020-11-17T15:34:20 EST">
+        <test-method status="PASS" signature="testclick()[pri:0, instance:tests.BuyOrderFunctionality@3b084709]" name="testclick" duration-ms="17342" started-at="2020-11-17T15:41:24 EST" finished-at="2020-11-17T15:41:41 EST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testclick -->
-        <test-method status="PASS" signature="CloseBrowser()[pri:0, instance:tests.test@3b084709]" name="CloseBrowser" is-config="true" duration-ms="818" started-at="2020-11-17T15:34:20 EST" finished-at="2020-11-17T15:34:20 EST">
+        <test-method status="PASS" signature="CloseBrowser()[pri:0, instance:tests.BuyOrderFunctionality@3b084709]" name="CloseBrowser" is-config="true" duration-ms="832" started-at="2020-11-17T15:41:41 EST" finished-at="2020-11-17T15:41:42 EST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- CloseBrowser -->
-      </class> <!-- tests.test -->
+      </class> <!-- tests.BuyOrderFunctionality -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
