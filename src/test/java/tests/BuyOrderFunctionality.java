@@ -44,7 +44,7 @@ public class BuyOrderFunctionality {
 		
 	//The actual Test
 	@Test
-	public void testclick() throws InterruptedException {
+	public void TestBuyOrderFunctionality() throws InterruptedException {
 		
 		MainPage MainP = PageFactory.initElements(driver, MainPage.class);
 		MainP.ClickOnSignInButton();
