@@ -69,8 +69,8 @@ public class CorrectTotalPrice {
 		ts.Click_More_Button_Product_One();
 
 		ProductPage ProdP = PageFactory.initElements(driver, ProductPage.class);
-		// 7. Increase quantity to 2.
-		ProdP.Enter_Quantity("2");
+		// 7. Make sure quantity is set to 1.
+		ProdP.Enter_Quantity("1");
 		// 8. Select size 'L'
 		ProdP.Select_Size("L");
 		// 9. Select color.
@@ -79,6 +79,12 @@ public class CorrectTotalPrice {
 		ProdP.Click_AddToCart_Button();
 		// 11. Click 'Proceed to checkout' button.
 		ProdP.Click_ProceedToCheckout_Button();
+		Thread.sleep(2000);
+		ProdP.StoreCurrentTotal();
+		//12. Change the quantity to 2.
+		ProdP.Click_IncreaseQuantity_Button();
+		//13. Verify that Total price is changing and reflecting correct price.
+		ProdP.TestCalculation();
 		
 		Thread.sleep(5000);
 	}
