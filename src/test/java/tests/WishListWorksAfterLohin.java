@@ -10,7 +10,7 @@ import pages.MainPage;
 import pages.TshirtsPage;
 import util.BrowserFactory;
 
-/*Test Case 2 - Verify that 'Add to Wishlist' only works after login.
+/*Test Case - Verify that 'Add to Wishlist' only works after login.
 Steps to Automate:
 1. Open link http://automationpractice.com/index.php
 2. Move your cursor over Women's link.

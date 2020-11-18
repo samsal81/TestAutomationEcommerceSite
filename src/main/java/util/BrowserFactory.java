@@ -11,10 +11,14 @@ public class BrowserFactory {
 	
 	//Open Browser
 	public static WebDriver LaunchBrowser() {
+		
+		ExcelReader reader = new ExcelReader("./data/testdata.xlsx");
+		String url = reader.getCellData("Sheet2", "url", 2);
+		
 		System.setProperty("webdriver.chrome.driver", "./Drivers/chromedriver.exe");
 		driver = new ChromeDriver();
 		driver.manage().window().maximize();
-		driver.get("http://automationpractice.com/index.php");
+		driver.get(url);
 		driver.manage().deleteAllCookies();
 		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 		return driver;

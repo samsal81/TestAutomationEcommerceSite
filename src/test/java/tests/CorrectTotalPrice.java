@@ -14,7 +14,7 @@ import pages.TshirtsPage;
 import util.BrowserFactory;
 import util.ExcelReader;
 
-/*Test Case 3 - Verify that Total Price is reflecting correctly if user changes quantity on 'Shopping Cart Summary' Page.
+/*Test Case - Verify that Total Price is reflecting correctly if user changes quantity on 'Shopping Cart Summary' Page.
 Steps to Automate:
 1. Open link http://automationpractice.com/index.php
 2. Login to the website.

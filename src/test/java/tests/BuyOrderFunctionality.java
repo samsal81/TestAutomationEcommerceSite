@@ -15,7 +15,7 @@ import pages.TshirtsPage;
 import util.BrowserFactory;
 import util.ExcelReader;
 
-/*Test Case 1 - Automate End to End Buy Order functionality.
+/*Test Case - Automate End to End Buy Order functionality.
 
 Steps to Automate:
 1. Open link http://automationpractice.com/index.php
