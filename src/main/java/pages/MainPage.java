@@ -21,6 +21,8 @@ public class MainPage {
 	WebElement Women_Button;
 	@FindBy(how = How.XPATH, using = "//*[@id=\"block_top_menu\"]/ul/li[1]/ul/li[1]/ul/li[1]/a")
 	WebElement Tshirts_Button;
+	@FindBy(how = How.XPATH, using = "//div/a[@title='Contact Us']")
+	WebElement ContactUs_Button;
 
 	// InteractiveMethods
 	public void ClickOnSignInButton() {
@@ -34,6 +36,14 @@ public class MainPage {
 
 	public void Click_Tshirts_Button() {
 		Tshirts_Button.click();
+	}
+	
+	public String GetPageTitle() {
+		return driver.getTitle();
+	}
+	
+	public void Click_ContactUS_Button() {
+		ContactUs_Button.click();
 	}
 
 }

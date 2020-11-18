@@ -2,24 +2,24 @@
 <testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="25555" started-at="2020-11-18T14:18:02 EST" finished-at="2020-11-18T14:18:27 EST">
+  <suite name="Default suite" duration-ms="12483" started-at="2020-11-18T15:39:51 EST" finished-at="2020-11-18T15:40:04 EST">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="25555" started-at="2020-11-18T14:18:02 EST" finished-at="2020-11-18T14:18:27 EST">
-      <class name="tests.CorrectTotalPrice">
-        <test-method status="PASS" signature="StartBrowser()[pri:0, instance:tests.CorrectTotalPrice@5d76b067]" name="StartBrowser" is-config="true" duration-ms="9755" started-at="2020-11-18T14:18:02 EST" finished-at="2020-11-18T14:18:11 EST">
+    <test name="Default test" duration-ms="12483" started-at="2020-11-18T15:39:51 EST" finished-at="2020-11-18T15:40:04 EST">
+      <class name="tests.ClickFirstMenuLinkAndPrintPageTitle">
+        <test-method status="PASS" signature="StartBrowser()[pri:0, instance:tests.ClickFirstMenuLinkAndPrintPageTitle@5d76b067]" name="StartBrowser" is-config="true" duration-ms="9884" started-at="2020-11-18T15:39:51 EST" finished-at="2020-11-18T15:40:01 EST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- StartBrowser -->
-        <test-method status="PASS" signature="TestCorrectTotalPrice()[pri:0, instance:tests.CorrectTotalPrice@5d76b067]" name="TestCorrectTotalPrice" duration-ms="14937" started-at="2020-11-18T14:18:11 EST" finished-at="2020-11-18T14:18:26 EST">
+        <test-method status="PASS" signature="ClickFirstMenuLinkAndPrintPageTitleTest()[pri:0, instance:tests.ClickFirstMenuLinkAndPrintPageTitle@5d76b067]" name="ClickFirstMenuLinkAndPrintPageTitleTest" duration-ms="1736" started-at="2020-11-18T15:40:01 EST" finished-at="2020-11-18T15:40:03 EST">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- TestCorrectTotalPrice -->
-        <test-method status="PASS" signature="CloseBrowser()[pri:0, instance:tests.CorrectTotalPrice@5d76b067]" name="CloseBrowser" is-config="true" duration-ms="812" started-at="2020-11-18T14:18:26 EST" finished-at="2020-11-18T14:18:27 EST">
+        </test-method> <!-- ClickFirstMenuLinkAndPrintPageTitleTest -->
+        <test-method status="PASS" signature="CloseBrowser()[pri:0, instance:tests.ClickFirstMenuLinkAndPrintPageTitle@5d76b067]" name="CloseBrowser" is-config="true" duration-ms="809" started-at="2020-11-18T15:40:03 EST" finished-at="2020-11-18T15:40:04 EST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- CloseBrowser -->
-      </class> <!-- tests.CorrectTotalPrice -->
+      </class> <!-- tests.ClickFirstMenuLinkAndPrintPageTitle -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
