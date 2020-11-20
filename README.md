@@ -1,6 +1,6 @@
-# TestAutomationEcommerceSite
+# Test Automation for an EcommerceSite
 This is a page object model framework I designed using selenium 
-to automate testing on an e-commerce mock website
+to automate testing on an e-commerce mock website.
 
 ## Usage
 To use this project you will need Eclipse IDE, Java JDK, Apache Maven.
