@@ -79,11 +79,7 @@ public class CorrectTotalPrice {
 		ProdP.Click_AddToCart_Button();
 		// 11. Click 'Proceed to checkout' button.
 		ProdP.Click_ProceedToCheckout_Button();
-		ProdP.StoreCurrentTotal();
-		// 12. Change the quantity to 2.
-		ProdP.Click_IncreaseQuantity_Button();
-		// 13. Verify that Total price is changing and reflecting correct price.
-		ProdP.TestCalculation();
+		ProdP.TestTotalCalculation();
 
 		Thread.sleep(5000);
 	}

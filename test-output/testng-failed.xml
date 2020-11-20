@@ -3,12 +3,13 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="tests.VerifyInvalidEmailAddressError">
+      <class name="tests.CorrectTotalPrice">
         <methods>
+          <include name="CloseBrowser"/>
+          <include name="TestCorrectTotalPrice"/>
           <include name="StartBrowser"/>
-          <include name="TestVerifyInvalidEmailAddressError"/>
         </methods>
-      </class> <!-- tests.VerifyInvalidEmailAddressError -->
+      </class> <!-- tests.CorrectTotalPrice -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

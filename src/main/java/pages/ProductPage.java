@@ -4,12 +4,11 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.How;
-import org.openqa.selenium.support.ui.Select;
 
 public class ProductPage extends BasePage {
 
 	WebDriver driver;
-	double OldTotal;
+	double DblCurrentTotal;
 
 	public ProductPage(WebDriver driver) {
 		this.driver = driver;
@@ -59,18 +58,19 @@ public class ProductPage extends BasePage {
 		IncreaseQuantity_Button.click();
 	}
 
-	public void StoreCurrentTotal() {
-		String CurrentTotal = TotalProductPrice.getText().substring(1);
-		double DblCurrentTotal = Double.parseDouble(CurrentTotal);
-		double OldTotal = DblCurrentTotal;
-	}
+	public void TestTotalCalculation() throws InterruptedException {
 
-	public void TestCalculation() {
-		String ModifiedTotal = TotalProductPrice.getText().substring(1);
-		double DblModifiedTotal = Double.parseDouble(ModifiedTotal);
-		String ProductPrc = ProductPrice.getText().substring(1);
-		double DblProductPrc = Double.parseDouble(ProductPrc);
-		if (OldTotal + DblProductPrc == DblModifiedTotal) {
+		double DblCurrentTotal = ConvertStringToDouble(TotalProductPrice);
+		
+		Click_IncreaseQuantity_Button();
+		
+		double DblProductPrc = ConvertStringToDouble(ProductPrice);
+
+		Thread.sleep(2000);
+
+		double DblModifiedTotal = ConvertStringToDouble(TotalProductPrice);
+		
+		if (DblCurrentTotal + DblProductPrc == DblModifiedTotal) {
 			System.out.println("Success! the calculation is correct");
 		} else {
 			System.out.println("Failure, the calculation is wrong");
