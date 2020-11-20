@@ -6,7 +6,7 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.How;
 import org.openqa.selenium.support.ui.Select;
 
-public class ProductPage {
+public class ProductPage extends BasePage {
 
 	WebDriver driver;
 	double OldTotal;
@@ -40,8 +40,7 @@ public class ProductPage {
 	}
 
 	public void Select_Size(String Size) {
-		Select dropdown = new Select(Size_Selection);
-		dropdown.selectByVisibleText(Size);
+		SelectFromDropdownByVisibleText(Size_Selection, Size);
 	}
 
 	public void Select_Color() {

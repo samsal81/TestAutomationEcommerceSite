@@ -1,5 +1,6 @@
 package pages;
 
+import static org.testng.Assert.assertEquals;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
@@ -17,10 +18,12 @@ public class MyAccountPage {
 	//Element Library
 	@FindBy(how = How.XPATH, using = "//a[@title='Women']")
 	WebElement Women_Button;
-	@FindBy(how = How.XPATH, using = "//*[@id=\"block_top_menu\"]/ul/li[1]/ul/li[1]/ul/li[1]/a")
+	@FindBy(how = How.XPATH, using = "//*[@id='block_top_menu']/ul/li[1]/ul/li[1]/ul/li[1]/a")
 	WebElement Tshirts_Button;
-	@FindBy(how = How.XPATH, using = "//*[@id=\"center_column\"]/div/div[1]/ul/li[1]/a")
+	@FindBy(how = How.XPATH, using = "//*[@id='center_column']/div/div[1]/ul/li[1]/a")
 	WebElement OrderHistoryAndDetails_Button;
+	@FindBy(how = How.XPATH, using = "//a[@class='account']/span")
+	WebElement NameOnAccount;
 
 	//InteractiveMethods
 	public void Hover_Over_Women_Button() {
@@ -34,5 +37,10 @@ public class MyAccountPage {
 
 	public void Click_OrderHistoryAndDetails_Button() {
 		OrderHistoryAndDetails_Button.click();
+	}
+	
+	public void Assert_NameOnAccount(String FirstName, String LastName) {
+		String FullName = FirstName + " " + LastName;
+		assertEquals(FullName, NameOnAccount.getText());
 	}
 }

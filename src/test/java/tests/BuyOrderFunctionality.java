@@ -95,8 +95,6 @@ public class BuyOrderFunctionality {
 		// 13. Make sure that Product is ordered.
 		OrderP.Assert_Order_Confirmation();
 
-		Thread.sleep(4000);
-
 	}
 
 	// Closing browser

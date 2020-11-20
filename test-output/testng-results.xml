@@ -2,24 +2,20 @@
 <testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="12483" started-at="2020-11-18T15:39:51 EST" finished-at="2020-11-18T15:40:04 EST">
+  <suite name="Default suite" duration-ms="14883" started-at="2020-11-19T19:25:43 EST" finished-at="2020-11-19T19:25:57 EST">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="12483" started-at="2020-11-18T15:39:51 EST" finished-at="2020-11-18T15:40:04 EST">
-      <class name="tests.ClickFirstMenuLinkAndPrintPageTitle">
-        <test-method status="PASS" signature="StartBrowser()[pri:0, instance:tests.ClickFirstMenuLinkAndPrintPageTitle@5d76b067]" name="StartBrowser" is-config="true" duration-ms="9884" started-at="2020-11-18T15:39:51 EST" finished-at="2020-11-18T15:40:01 EST">
+    <test name="Default test" duration-ms="14883" started-at="2020-11-19T19:25:43 EST" finished-at="2020-11-19T19:25:57 EST">
+      <class name="tests.VerifyErrorMessagesForMandatoryFields">
+        <test-method status="PASS" signature="StartBrowser()[pri:0, instance:tests.VerifyErrorMessagesForMandatoryFields@7f13d6e]" name="StartBrowser" is-config="true" duration-ms="10639" started-at="2020-11-19T19:25:43 EST" finished-at="2020-11-19T19:25:53 EST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- StartBrowser -->
-        <test-method status="PASS" signature="ClickFirstMenuLinkAndPrintPageTitleTest()[pri:0, instance:tests.ClickFirstMenuLinkAndPrintPageTitle@5d76b067]" name="ClickFirstMenuLinkAndPrintPageTitleTest" duration-ms="1736" started-at="2020-11-18T15:40:01 EST" finished-at="2020-11-18T15:40:03 EST">
+        <test-method status="PASS" signature="TestVerifyErrorMessagesForMandatoryFields()[pri:0, instance:tests.VerifyErrorMessagesForMandatoryFields@7f13d6e]" name="TestVerifyErrorMessagesForMandatoryFields" duration-ms="4185" started-at="2020-11-19T19:25:53 EST" finished-at="2020-11-19T19:25:57 EST">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- ClickFirstMenuLinkAndPrintPageTitleTest -->
-        <test-method status="PASS" signature="CloseBrowser()[pri:0, instance:tests.ClickFirstMenuLinkAndPrintPageTitle@5d76b067]" name="CloseBrowser" is-config="true" duration-ms="809" started-at="2020-11-18T15:40:03 EST" finished-at="2020-11-18T15:40:04 EST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- CloseBrowser -->
-      </class> <!-- tests.ClickFirstMenuLinkAndPrintPageTitle -->
+        </test-method> <!-- TestVerifyErrorMessagesForMandatoryFields -->
+      </class> <!-- tests.VerifyErrorMessagesForMandatoryFields -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

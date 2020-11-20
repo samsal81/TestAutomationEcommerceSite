@@ -42,11 +42,11 @@ public class CorrectTotalPrice {
 
 	@Test
 	public void TestCorrectTotalPrice() throws InterruptedException {
-		
+
 		ExcelReader reader = new ExcelReader("./data/testdata.xlsx");
 		String username = reader.getCellData("Sheet1", "username", 2);
 		String password = reader.getCellData("Sheet1", "password", 2);
-		
+
 		MainPage MainP = PageFactory.initElements(driver, MainPage.class);
 		MainP.ClickOnSignInButton();
 
@@ -80,14 +80,14 @@ public class CorrectTotalPrice {
 		// 11. Click 'Proceed to checkout' button.
 		ProdP.Click_ProceedToCheckout_Button();
 		ProdP.StoreCurrentTotal();
-		//12. Change the quantity to 2.
+		// 12. Change the quantity to 2.
 		ProdP.Click_IncreaseQuantity_Button();
-		//13. Verify that Total price is changing and reflecting correct price.
+		// 13. Verify that Total price is changing and reflecting correct price.
 		ProdP.TestCalculation();
-		
+
 		Thread.sleep(5000);
 	}
-	
+
 	// Closing browser
 	@AfterMethod
 	public void CloseBrowser() {
