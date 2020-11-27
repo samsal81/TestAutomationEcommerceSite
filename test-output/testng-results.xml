@@ -2,24 +2,24 @@
 <testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="27084" started-at="2020-11-20T14:32:47 EST" finished-at="2020-11-20T14:33:14 EST">
+  <suite name="Default suite" duration-ms="28344" started-at="2020-11-21T10:32:46 EST" finished-at="2020-11-21T10:33:15 EST">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="27084" started-at="2020-11-20T14:32:47 EST" finished-at="2020-11-20T14:33:14 EST">
-      <class name="tests.CorrectTotalPrice">
-        <test-method status="PASS" signature="StartBrowser()[pri:0, instance:tests.CorrectTotalPrice@23faf8f2]" name="StartBrowser" is-config="true" duration-ms="10203" started-at="2020-11-20T14:32:47 EST" finished-at="2020-11-20T14:32:57 EST">
+    <test name="Default test" duration-ms="28344" started-at="2020-11-21T10:32:46 EST" finished-at="2020-11-21T10:33:15 EST">
+      <class name="tests.BuyOrderFunctionality">
+        <test-method status="PASS" signature="StartBrowser()[pri:0, instance:tests.BuyOrderFunctionality@23faf8f2]" name="StartBrowser" is-config="true" duration-ms="10318" started-at="2020-11-21T10:32:46 EST" finished-at="2020-11-21T10:32:57 EST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- StartBrowser -->
-        <test-method status="PASS" signature="TestCorrectTotalPrice()[pri:0, instance:tests.CorrectTotalPrice@23faf8f2]" name="TestCorrectTotalPrice" duration-ms="15992" started-at="2020-11-20T14:32:57 EST" finished-at="2020-11-20T14:33:13 EST">
+        <test-method status="PASS" signature="TestBuyOrderFunctionality()[pri:0, instance:tests.BuyOrderFunctionality@23faf8f2]" name="TestBuyOrderFunctionality" duration-ms="17058" started-at="2020-11-21T10:32:57 EST" finished-at="2020-11-21T10:33:14 EST">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- TestCorrectTotalPrice -->
-        <test-method status="PASS" signature="CloseBrowser()[pri:0, instance:tests.CorrectTotalPrice@23faf8f2]" name="CloseBrowser" is-config="true" duration-ms="832" started-at="2020-11-20T14:33:13 EST" finished-at="2020-11-20T14:33:14 EST">
+        </test-method> <!-- TestBuyOrderFunctionality -->
+        <test-method status="PASS" signature="CloseBrowser()[pri:0, instance:tests.BuyOrderFunctionality@23faf8f2]" name="CloseBrowser" is-config="true" duration-ms="897" started-at="2020-11-21T10:33:14 EST" finished-at="2020-11-21T10:33:15 EST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- CloseBrowser -->
-      </class> <!-- tests.CorrectTotalPrice -->
+      </class> <!-- tests.BuyOrderFunctionality -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

@@ -44,8 +44,8 @@ public class CorrectTotalPrice {
 	public void TestCorrectTotalPrice() throws InterruptedException {
 
 		ExcelReader reader = new ExcelReader("./data/testdata.xlsx");
-		String username = reader.getCellData("Sheet1", "username", 2);
-		String password = reader.getCellData("Sheet1", "password", 2);
+		String username = reader.getCellData("LoginInfo", "username", 2);
+		String password = reader.getCellData("LoginInfo", "password", 2);
 
 		MainPage MainP = PageFactory.initElements(driver, MainPage.class);
 		MainP.ClickOnSignInButton();
