@@ -19,7 +19,7 @@ Steps to Automate:
 5. 'Add to Wishlist' will appear on the bottom of that product, click on it.
 6. Verify that error message is displayed 'You must be logged in to manage your wishlist.'*/
 
-public class WishListWorksAfterLohin {
+public class WishListWorksAfterLogin {
 	WebDriver driver;
 
 	//1. Open link http://automationpractice.com/index.php
